@@ -1,3 +1,10 @@
+/*
+=================================================
+=================================================
+Pokemon Choice
+=================================================
+=================================================
+*/
 const select = document.querySelector('select');
 const paragraph = document.querySelector('p');
 const image = document.querySelector('img');
@@ -22,4 +29,29 @@ function choseStarter() {
     } else {
         paragraph.textContent = ``;
     }
+}
+
+/*
+=================================================
+=================================================
+Theme Choice
+=================================================
+=================================================
+*/
+
+const themeSelect = document.getElementById('theme');
+const body = document.querySelector('body');
+
+themeSelect.addEventListener('change', setTheme);
+
+function setTheme() {
+    let choice = themeSelect.value;
+
+    if (choice === 'light-mode') {
+        body.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+        body.style.color = "rgba(0, 0, 0, 1)";
+    } else if (choice === 'dark-mode') {
+        body.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+        body.style.color = 'rgba(255, 255, 255, 1)';
+    } 
 }
