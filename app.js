@@ -53,5 +53,17 @@ function setTheme() {
     } else if (choice === 'dark-mode') {
         body.style.backgroundColor = 'rgba(0, 0, 0, 1)';
         body.style.color = 'rgba(255, 255, 255, 1)';
-    } 
+    } else if (choice === 'jungle') {
+        body.style.backgroundColor = 'rgba(0, 255, 100, 0.6)';
+        body.style.color = 'rgb(40, 101, 0)';
+    } else if (choice === 'ocean') {
+        body.style.backgroundColor = 'rgba(0, 135, 255, 0.5)';
+        body.style.color = 'rgb(0, 56, 107)';
+    } else if (choice === 'volcano') {
+        body.style.backgroundColor = 'rgba(150, 0, 0, 0.9)';
+        body.style.color = 'rgb(255, 179, 0)';
+    } else if (choice === 'thunder') {
+        body.style.backgroundColor = 'rgb(50, 50, 50)';
+        body.style.color = 'yellow';
+    }
 }
